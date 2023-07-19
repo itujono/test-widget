@@ -59,7 +59,6 @@ $40a61e0a79f7f2c2$export$e9897d434e0741ee.displayName = "CardFooter";
 
 function $fda1c8163c32af02$export$2e2bcd8739ae039() {
     return /*#__PURE__*/ (0, $8d3ZJ$jsxs)((0, $40a61e0a79f7f2c2$export$60332b2344f7fe41), {
-        id: "widget-1",
         children: [
             /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $40a61e0a79f7f2c2$export$5665775b26e26c5d), {
                 children: /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $40a61e0a79f7f2c2$export$474db65c3c394e1c), {
@@ -81,28 +80,18 @@ function $fda1c8163c32af02$export$2e2bcd8739ae039() {
 }
 
 
-function $edeafd00018ca857$var$App({ symbol: symbol }) {
-    return /*#__PURE__*/ (0, $8d3ZJ$jsxs)("main", {
-        children: [
-            /*#__PURE__*/ (0, $8d3ZJ$jsx)("span", {
-                children: symbol
-            }),
-            /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $fda1c8163c32af02$export$2e2bcd8739ae039), {})
-        ]
+function $edeafd00018ca857$var$App() {
+    return /*#__PURE__*/ (0, $8d3ZJ$jsx)("main", {
+        children: /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $fda1c8163c32af02$export$2e2bcd8739ae039), {})
     });
 }
 var $edeafd00018ca857$export$2e2bcd8739ae039 = $edeafd00018ca857$var$App;
 
 
 
-const $a25b190ccaa8a4de$var$widgets = document.querySelectorAll(".luxor-hi-widget");
-$a25b190ccaa8a4de$var$widgets.forEach((div)=>{
-    const root = (0, $8d3ZJ$reactdomclient).createRoot(div);
-    root.render(/*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $8d3ZJ$react).StrictMode, {
-        children: /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $edeafd00018ca857$export$2e2bcd8739ae039), {
-            symbol: div.dataset.symbol
-        })
-    }));
-});
+// const widgets = document.querySelectorAll(".luxor-hi-widget")!;
+(0, $8d3ZJ$reactdomclient).createRoot(document.getElementById("kpi-widget")).render(/*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $8d3ZJ$react).StrictMode, {
+    children: /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $edeafd00018ca857$export$2e2bcd8739ae039), {})
+}));
 
 
