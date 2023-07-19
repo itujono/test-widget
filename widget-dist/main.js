@@ -5,8 +5,7 @@ import $8d3ZJ$reactdomclient from "react-dom/client";
 import {clsx as $8d3ZJ$clsx} from "clsx";
 import {twMerge as $8d3ZJ$twMerge} from "tailwind-merge";
 
-
-
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */ /* eslint-disable @typescript-eslint/no-unsafe-member-access */ 
 
 
 
@@ -82,17 +81,28 @@ function $fda1c8163c32af02$export$2e2bcd8739ae039() {
 }
 
 
-function $edeafd00018ca857$var$App() {
-    return /*#__PURE__*/ (0, $8d3ZJ$jsx)("main", {
-        children: /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $fda1c8163c32af02$export$2e2bcd8739ae039), {})
+function $edeafd00018ca857$var$App({ symbol: symbol }) {
+    return /*#__PURE__*/ (0, $8d3ZJ$jsxs)("main", {
+        children: [
+            /*#__PURE__*/ (0, $8d3ZJ$jsx)("span", {
+                children: symbol
+            }),
+            /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $fda1c8163c32af02$export$2e2bcd8739ae039), {})
+        ]
     });
 }
 var $edeafd00018ca857$export$2e2bcd8739ae039 = $edeafd00018ca857$var$App;
 
 
 
-(0, $8d3ZJ$reactdomclient).createRoot(document.getElementById("kpi-widget")).render(/*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $8d3ZJ$react).StrictMode, {
-    children: /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $edeafd00018ca857$export$2e2bcd8739ae039), {})
-}));
+const $a25b190ccaa8a4de$var$widgets = document.querySelectorAll(".luxor-hi-widget");
+$a25b190ccaa8a4de$var$widgets.forEach((div)=>{
+    const root = (0, $8d3ZJ$reactdomclient).createRoot(div);
+    root.render(/*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $8d3ZJ$react).StrictMode, {
+        children: /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $edeafd00018ca857$export$2e2bcd8739ae039), {
+            symbol: div.dataset.symbol
+        })
+    }));
+});
 
 
