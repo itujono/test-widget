@@ -1,9 +1,8 @@
 import KPIWidget from "./widget/kpi";
 
-function App({ symbol }: { symbol: string }) {
+function App() {
   return (
     <main>
-      <span>{symbol}</span>
       <KPIWidget />
     </main>
   );

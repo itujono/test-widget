@@ -5,13 +5,10 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 
-const widgets = document.querySelectorAll(".luxor-hi-widget");
+// const widgets = document.querySelectorAll(".luxor-hi-widget")!;
 
-widgets.forEach((div) => {
-  const root = ReactDOM.createRoot(div);
-  root.render(
-    <React.StrictMode>
-      <App symbol={div.dataset.symbol} />
-    </React.StrictMode>
-  );
-});
+ReactDOM.createRoot(document.getElementById("kpi-widget")!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

@@ -8,7 +8,7 @@ import {
 
 export default function KPIWidget() {
   return (
-    <Card id="widget-1">
+    <Card>
       <CardHeader>
         <CardTitle>Widget KPI</CardTitle>
       </CardHeader>
