@@ -5,7 +5,7 @@ import $8d3ZJ$reactdomclient from "react-dom/client";
 import {clsx as $8d3ZJ$clsx} from "clsx";
 import {twMerge as $8d3ZJ$twMerge} from "tailwind-merge";
 
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */ /* eslint-disable @typescript-eslint/no-unsafe-member-access */ 
+
 
 
 
@@ -89,7 +89,6 @@ var $edeafd00018ca857$export$2e2bcd8739ae039 = $edeafd00018ca857$var$App;
 
 
 
-// const widgets = document.querySelectorAll(".luxor-hi-widget")!;
 (0, $8d3ZJ$reactdomclient).createRoot(document.getElementById("kpi-widget")).render(/*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $8d3ZJ$react).StrictMode, {
     children: /*#__PURE__*/ (0, $8d3ZJ$jsx)((0, $edeafd00018ca857$export$2e2bcd8739ae039), {})
 }));
