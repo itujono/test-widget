@@ -11,9 +11,9 @@ export default defineConfig({
         hashprice: "./src/widget/hashprice.tsx",
       },
       output: {
-        entryFileNames: "widget-[name].js",
-        chunkFileNames: "widget-[name].js",
-        assetFileNames: "widget-[name].[ext]",
+        // entryFileNames: "widget-[name].js",
+        // chunkFileNames: "widget-[name].js",
+        // assetFileNames: "widget-[name].[ext]",
         dir: "widget-dist",
       },
     },
