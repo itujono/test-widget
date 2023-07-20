@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 import {
   Card,
   CardContent,
@@ -8,8 +10,32 @@ import {
 } from "../components/card";
 import { cn } from "../utils";
 
+type BTCPrice = {
+  data: {
+    bitcoin: {
+      usd: number;
+    };
+  };
+};
+
 export default function HashpriceWidget() {
   const [dark, setDark] = useState(false);
+
+  const { data, isLoading } = useQuery<BTCPrice>({
+    queryKey: ["btcPrice"],
+    queryFn: () => {
+      return axios.get(
+        "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+      );
+    },
+  });
+
+  const _btcPrice = data?.data.bitcoin.usd || 0;
+
+  const btcPrice = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(_btcPrice);
 
   return (
     <Card className={cn(dark && "bg-black")}>
@@ -22,7 +48,7 @@ export default function HashpriceWidget() {
         </button>
       </CardHeader>
       <CardContent className={cn(dark && "text-white")}>
-        <p>This is my Hashprice widget only for testing purpose</p>
+        {isLoading ? <p>Please wait...</p> : <p>BTC: {btcPrice}</p>}
       </CardContent>
       <CardFooter className={cn(dark && "text-white")}>
         <p>Footer</p>
