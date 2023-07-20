@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "source": "src/main.tsx",
+  "source": "src/main-kpi.tsx",
   "main": "widget-dist/main.js",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,7 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "build:widget": "parcel build --no-source-maps",
-    "build:widget:kpi": "vite build --base src/widget/kpi --outDir widget-dist/kpi"
+    "build:widget:kpi": "vite build --base src/widget/kpi --outDir widget-dist/kpi --file kpi.js"
   },
   "dependencies": {
     "axios": "^1.4.0",
