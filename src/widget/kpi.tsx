@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import {
   Card,
   CardContent,
@@ -20,7 +21,7 @@ export default function KPIWidget() {
         </button>
       </CardHeader>
       <CardContent className={cn(dark && "text-white")}>
-        <p>This is my KPI widget only for testing purpose</p>
+        <p>This is my KPI widget only for testing purpose cool!</p>
       </CardContent>
       <CardFooter className={cn(dark && "text-white")}>
         <p>Footer</p>
