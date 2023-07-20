@@ -1,1 +1,1 @@
-import{j as e,C as r,a as t,b as s,c as a,d,e as i,R as n}from"./widget-card.js";function o(){return e.jsxs(r,{children:[e.jsx(t,{children:e.jsx(s,{children:"Widget Network Hashrate"})}),e.jsx(a,{children:e.jsx("p",{children:"This is my Network Hashrate widget only for testing purpose"})}),e.jsx(d,{children:e.jsx("p",{children:"Footer"})})]})}i.createRoot(document.getElementById("network-hashrate-widget")).render(e.jsx(n.StrictMode,{children:e.jsx(o,{})}));
+import"./widget-kpi.js";

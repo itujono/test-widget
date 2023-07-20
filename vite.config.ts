@@ -6,9 +6,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        kpi: "./src/main-kpi.tsx",
-        "network-hashrate": "./src/main-network-hashrate.tsx",
-        hashprice: "./src/main-hashprice.tsx",
+        kpi: "./src/widget/kpi.tsx",
+        "network-hashrate": "./src/widget/network-hashrate.tsx",
+        hashprice: "./src/widget/hashprice.tsx",
       },
       output: {
         entryFileNames: "widget-[name].js",
