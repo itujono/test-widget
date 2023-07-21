@@ -13,7 +13,7 @@
     "build:kpi": "vite build --base /src/widget/kpi --outDir widget-dist/kpi",
     "build:hashprice": "vite build --base /src/widget/hashprice --outDir widget-dist/hashprice",
     "build:network": "vite build --base /src/widget/network-hashrate --outDir widget-dist/network-hashrate",
-    "build:all": "npm run build:widget:kpi && npm run build:widget:hashprice && npm run build:widget:network"
+    "build:all": "vite build --base /src/App --outDir widget-dist/App"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.29.25",

@@ -4,7 +4,7 @@ import NetworkHashrateWidget from "./widget/network-hashrate";
 
 function App() {
   return (
-    <main className="grid grid-cols-3 gap-4">
+    <main className="grid grid-cols-3 gap-4 text-clip">
       <KPIWidget />
       <HashpriceWidget />
       <NetworkHashrateWidget />
