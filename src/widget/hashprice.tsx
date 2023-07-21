@@ -38,7 +38,10 @@ export default function HashpriceWidget() {
   }).format(_btcPrice);
 
   return (
-    <Card className={cn(dark && "bg-black")}>
+    <Card
+      className={cn(dark && "bg-black", "luxor-hi-widget")}
+      data-widget="hashprice"
+    >
       <CardHeader className="flex justify-between flex-row items-center">
         <CardTitle className={cn(dark && "text-white")}>
           Widget Hashprice

@@ -5,14 +5,14 @@ import NetworkHashrateWidget from "./widget/network-hashrate";
 
 const client = new QueryClient();
 
-function App() {
+type WidgetType = "kpi" | "hashprice" | "network-hashrate";
+
+function App({ widget }: { widget: WidgetType }) {
   return (
     <QueryClientProvider client={client}>
-      <main className="grid grid-cols-3 gap-4 text-clip">
-        <KPIWidget />
-        <HashpriceWidget />
-        <NetworkHashrateWidget />
-      </main>
+      {widget === "kpi" && <KPIWidget />}
+      {widget === "hashprice" && <HashpriceWidget />}
+      {widget === "network-hashrate" && <NetworkHashrateWidget />}
     </QueryClientProvider>
   );
 }

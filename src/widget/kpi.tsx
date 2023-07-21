@@ -13,7 +13,10 @@ export default function KPIWidget() {
   const [dark, setDark] = useState(false);
 
   return (
-    <Card className={cn(dark && "bg-black")}>
+    <Card
+      className={cn(dark && "bg-black", "luxor-hi-widget")}
+      data-widget="kpi"
+    >
       <CardHeader className="flex justify-between flex-row items-center">
         <CardTitle className={cn(dark && "text-white")}>Widget KPI</CardTitle>
         <button className="inline-block" onClick={() => setDark(!dark)}>
