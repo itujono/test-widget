@@ -1,0 +1,9 @@
+[
+  {"id": 1, "name": "Manatee", "depth": 0, "image": "https://raw.githubusercontent.com/username/repo/main/images/manatee.jpg", "fact": "Manatees are gentle herbivores."},
+  {"id": 2, "name": "Bottlenose Dolphin", "depth": 100, "image": "https://raw.githubusercontent.com/username/repo/main/images/dolphin.jpg", "fact": "Dolphins dive up to 300m."},
+  {"id": 100, "name": "Submarine Trieste", "depth": 9000, "image": "https://raw.githubusercontent.com/username/repo/main/images/trieste.jpg", "type": "submarine", "fact": "Begins descent to Challenger Deep."},
+  {"id": 101, "name": "Challenger Trivia 1", "depth": 9200, "type": "trivia", "fact": "Descent started Jan 23, 1960."},
+  {"id": 102, "name": "Challenger Trivia 2", "depth": 9500, "type": "trivia", "fact": "Used re-breather tech for spacecraft."},
+  {"id": 103, "name": "Challenger Trivia 3", "depth": 9800, "type": "trivia", "fact": "Window cracked under pressure."},
+  {"id": 104, "name": "Challenger Deep", "depth": 10994, "image": "https://raw.githubusercontent.com/username/repo/main/images/trieste.jpg", "type": "submarine-end", "fact": "Reached after 4h 47m."}
+]
